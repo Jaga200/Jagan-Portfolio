@@ -1,0 +1,234 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Complete" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0e185bc50.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div id="header">
+      <div class=" container">
+        <nav>
+          <img src="Jagannath.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Jagannath</span><br>From Vellore, Tamilnadu</h1>
+        </div>
+      </div>
+    </div>
+    <!-------------------ABOUT--------------------------->
+    <div id="about">
+     <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="WhatsApp.png">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Dynamic and detail-oriented Computer Science graduate (M.Sc.) with expertise in Full Stack Development, 
+               specializing in Java, JavaScript, and modern web technologies. Proven ability to design responsive, 
+               user-centric applications, demonstrated through projects like the University Website Redesign 
+               (30% faster load time) and a Futuristic Music Player with advanced UI features. Equipped with certifications 
+               in Full Stack Engineering and Office Management, complemented by strong analytical thinking, leadership, and 
+               adaptability to drive collaborative tech solutions.</p>
+              
+               <div class="tab-titles">
+                <p class="tab-links active-line" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>               
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                 <ul>
+                   <li><span>Programming Languages</span><br> Java, Data Sructure</li>
+                   <li><span>Web Development</span><br>HTML5, CSS3, JavaScript,<br>Bootstrap,UI</li>
+                   <li><span>Database</span><br>MySQL</li>
+                   <li><span>Tools</span><br>VS Code, IntelliJ IDEA, Excel,<br>Power point, Eclipse, Git </li>
+                 </ul>
+               </div>
+               <div class="tab-contents" id="Education">
+                <ul>
+                  <li><span>2022</span><br>M.Sc Computer Science at Thirualluvar University</li>
+                  <li><span>2020</span><br>B.Sc Computer Science at Tiruvalluvar University</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Certifications">
+                <ul>
+                  <li><span>2023</span><br>FullStack Software Engineering-JAVA at NIIT Institute</li>
+                  <li><span>2019</span><br>Diploma in Office Management at SRM Computer center</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------Project---------->
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>University Multipages WebSite Redesign</h2>
+              <p>Led the complete redesign of a university website, enhancing its visual appeal, 
+                responsiveness, and user experience. Implemented modern web design principles to 
+                create a seamless navigation flow across multiple pages.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-crop-alt"></i>
+              <h2>Futuristic Music Player</h2>
+              <p>Designed and developed a modern, feature-rich music player with an intuitive user 
+                 interface and seamless audio playback experience. The futuristic design enhances 
+                 user interaction with smooth animations, dynamic themes, and responsive controls.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fab fa-app-store"></i>
+              <h2>Ecommerce Website</h2>
+              <p>Developed a fully responsive E-Commerce website with a modern design and user-friendly 
+                 interface. The website provides a seamless shopping experience with well-structured navigation, 
+                 product categories, and an optimized layout.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <!---------------Portfolio---------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-class">My Wok</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png"> 
+            <div class="layer">
+              <h3>University Website</h3>
+              <p>The website connects students and faculty with essential resources and information.
+               Access it now for a seamless experience.</p>
+               <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png"> 
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>The app lets you enjoy your favorite songs with a seamless and interactive experience. 
+                Download now and start listening!</p>
+               <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png"> 
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>The app connects you to a wide range of products from top brands worldwide. 
+                Shop now for the best deals!</p>
+               <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!------------Contact------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>jagannath.natarajan99@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+91 7339399384</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/share/17trKzCryA/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/captain_jagan?igsh=azg0YmM2bW0wbnI1"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/jagannath20/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Jaga200"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="My-CV.pdf" download class="btn btn2">Download CV</a>
+          </div>          
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Jagan. Made with <i class="fas fa-heart"></i> by Jagannath</p>
+      </div>
+    </div>
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+          sidemenu.style.right="0";
+        }
+        function closemenu(){
+          sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyvmY1QM8axwhkCozGNJASRkeN7MIjC9zZZz7BoMLnaQAoKt3JCje4n-AgYAsUxJE8KYQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg= document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>{
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+    <script>
+      var loader=document.getElementById("preloader");
+      window.addEventListener("load", function(){
+        loader.style.display="none";
+      })
+    </script>
+</body>
+</html>
+
+
+
+
